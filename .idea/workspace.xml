@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="735fe65c-6948-4397-b793-51a5d2d97383" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/PlayController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/QuizController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/Option.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/Quiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/utils/jdm/QuestionJDM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/play.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/quiz.fxml" afterDir="false" />
+    <list default="true" id="735fe65c-6948-4397-b793-51a5d2d97383" name="Changes" comment="feature:Menambah data Quiz dan Controller Quiz&#10;&#10;Menambah json file sebagai data quiz dan menampilkan soal serta jawaban kemudian memvalidasi jawaban yang benar untuk lanjut kejawaban selanjutnya.&#10;Tolong Hubungkan dengan UI yand sudah dibuat!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/hello-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +77,19 @@
       <option name="presentableId" value="Default" />
       <updated>1714147298102</updated>
     </task>
+    <task id="LOCAL-00001" summary="feature:Menambah data Quiz dan Controller Quiz&#10;&#10;Menambah json file sebagai data quiz dan menampilkan soal serta jawaban kemudian memvalidasi jawaban yang benar untuk lanjut kejawaban selanjutnya.&#10;Tolong Hubungkan dengan UI yand sudah dibuat!">
+      <option name="closed" value="true" />
+      <created>1715500410218</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715500410218</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feature:Menambah data Quiz dan Controller Quiz&#10;&#10;Menambah json file sebagai data quiz dan menampilkan soal serta jawaban kemudian memvalidasi jawaban yang benar untuk lanjut kejawaban selanjutnya.&#10;Tolong Hubungkan dengan UI yand sudah dibuat!" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature:Menambah data Quiz dan Controller Quiz&#10;&#10;Menambah json file sebagai data quiz dan menampilkan soal serta jawaban kemudian memvalidasi jawaban yang benar untuk lanjut kejawaban selanjutnya.&#10;Tolong Hubungkan dengan UI yand sudah dibuat!" />
   </component>
 </project>
