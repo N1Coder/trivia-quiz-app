@@ -22,15 +22,4 @@ public class QuestionJDM {
         return quiz;
     }
 
-
-
-
-
-
-    public void validateSelectedOption(Option selectionOption){
-        if (selectionOption.getCorrect() == Boolean.TRUE){
-            System.out.println("betul");
-        }
-        System.out.println("salahNjing");
-    }
 }
