@@ -4,34 +4,59 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="735fe65c-6948-4397-b793-51a5d2d97383" name="Changes" comment="initial commit">
+    <list default="true" id="735fe65c-6948-4397-b793-51a5d2d97383" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ButtonStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backgroundMusic.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/btnMenuOnClick.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/correct.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hoverButtonSound.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/utils/music/Music.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/utils/timer/QuizTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrong.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/PlayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/PlayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/QuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/QuizController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/utils/jdm/QuestionJDM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/utils/jdm/QuestionJDM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/menu-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/play-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/play-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/play.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/quiz.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
     </option>
+  </component>
+  <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Kurniadinata&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/N1Coder/trivia-quiz-app.git&quot;,
+    &quot;accountId&quot;: &quot;d8e40fa8-8c69-4013-a0b2-d45fce2b2e26&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2feiQfcZRz9JSDKOzZg6pzXYA23" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,21 +65,33 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ata&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/maulana/Documents/Code/trivia-quiz-app&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.44618216&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.main.triviaquizapp.HelloApplication" />
       <module name="trivia-quiz-app" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\JavaFx\javafx-sdk-22.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;$PROJECT_DIR$/../javafx-sdk-22.0.1 2/lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -69,14 +106,23 @@
       <option name="presentableId" value="Default" />
       <updated>1714147298102</updated>
     </task>
-    <task id="LOCAL-00001" summary="initial commit">
-      <created>1714169116985</created>
+    <task id="LOCAL-00001" summary="feature:Menambah data Quiz dan Controller Quiz&#10;&#10;Menambah json file sebagai data quiz dan menampilkan soal serta jawaban kemudian memvalidasi jawaban yang benar untuk lanjut kejawaban selanjutnya.&#10;Tolong Hubungkan dengan UI yand sudah dibuat!">
+      <option name="closed" value="true" />
+      <created>1715500410218</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1714169116985</updated>
+      <updated>1715500410218</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feature:Menambah data Quiz dan Controller Quiz&#10;&#10;Menambah json file sebagai data quiz dan menampilkan soal serta jawaban kemudian memvalidasi jawaban yang benar untuk lanjut kejawaban selanjutnya.&#10;Tolong Hubungkan dengan UI yand sudah dibuat!">
+      <option name="closed" value="true" />
+      <created>1715504387718</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715504387718</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,18 +130,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+    <MESSAGE value="feature:Menambah data Quiz dan Controller Quiz&#10;&#10;Menambah json file sebagai data quiz dan menampilkan soal serta jawaban kemudian memvalidasi jawaban yang benar untuk lanjut kejawaban selanjutnya.&#10;Tolong Hubungkan dengan UI yand sudah dibuat!" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature:Menambah data Quiz dan Controller Quiz&#10;&#10;Menambah json file sebagai data quiz dan menampilkan soal serta jawaban kemudian memvalidasi jawaban yang benar untuk lanjut kejawaban selanjutnya.&#10;Tolong Hubungkan dengan UI yand sudah dibuat!" />
   </component>
 </project>
