@@ -4,25 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="735fe65c-6948-4397-b793-51a5d2d97383" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ButtonStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backgroundMusic.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/btnMenuOnClick.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/correct.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hoverButtonSound.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/utils/music/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/utils/timer/QuizTimer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrong.wav" afterDir="false" />
+    <list default="true" id="735fe65c-6948-4397-b793-51a5d2d97383" name="Changes" comment="hotfix: modified gitignore to ignore .idea dir">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/input-nickname-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/PlayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/PlayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/QuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/QuizController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/utils/jdm/QuestionJDM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/utils/jdm/QuestionJDM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/menu-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/play-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/play-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/play.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/quiz.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -91,7 +76,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.main.triviaquizapp.HelloApplication" />
       <module name="trivia-quiz-app" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;$PROJECT_DIR$/../javafx-sdk-22.0.1 2/lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\JavaFx\javafx-sdk-22.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
