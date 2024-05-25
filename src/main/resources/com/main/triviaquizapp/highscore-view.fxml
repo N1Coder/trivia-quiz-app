@@ -15,9 +15,9 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="740.0" style="-fx-background-color: ffdd00;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="740.0" style="-fx-background-color: #ffdd00;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TextFlow layoutX="26.0" layoutY="25.0" prefHeight="52.0" prefWidth="302.0" style="-fx-background-color: fff;" textAlignment="CENTER">
+      <TextFlow layoutX="26.0" layoutY="25.0" prefHeight="52.0" prefWidth="500.0" style="-fx-background-color: #fff;" textAlignment="CENTER">
          <children>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LEADERBOARDS">
                <font>
@@ -29,7 +29,7 @@
             <DropShadow height="0.0" offsetX="10.0" offsetY="10.0" radius="0.0" width="0.0" />
          </effect>
       </TextFlow>
-      <Button graphicTextGap="12.0" layoutX="576.0" layoutY="22.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="136.0" style="-fx-background-color: af00ff;" text="EXIT" textFill="WHITE">
+      <Button fx:id="btnExitLeaderboard" layoutX="576.0" layoutY="22.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="136.0" style="-fx-background-color: #af00ff;" text="EXIT" textFill="WHITE">
          <font>
             <Font name="Pixelify Sans Regular" size="28.0" />
          </font>
@@ -47,58 +47,54 @@
             <SVGPath content="M5.002 21h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2h-14c-1.103 0-2 .897-2 2v6.001H10V7l6 5l-6 5v-3.999H3.002V19c0 1.103.897 2 2 2" fill="WHITE" />
          </graphic>
       </Button>
-      <GridPane hgap="5.0" layoutX="26.0" layoutY="105.0" prefHeight="476.0" prefWidth="687.0" vgap="10.0">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.20001220703125" minWidth="0.0" prefWidth="53.0000244140625" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="475.2" minWidth="10.0" prefWidth="461.79997558593755" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.40002441406256" minWidth="10.0" prefWidth="56.600006103515625" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
-        </rowConstraints>
+      <GridPane hgap="10.0" layoutX="26.0" layoutY="105.0" prefHeight="400.0" prefWidth="687.0" vgap="10.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="150.0" prefWidth="250.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
+         </rowConstraints>
          <children>
-            <TextFlow prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: fff; -fx-background-radius: 500;" textAlignment="CENTER">
+            <TextFlow style="-fx-background-color: #fff; -fx-background-radius: 500;" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0">
                <children>
-                  <VBox alignment="CENTER" prefHeight="11.0" prefWidth="52.0">
+                  <VBox alignment="CENTER" prefHeight="54.0" prefWidth="52.0">
                      <children>
-                        <SVGPath content="m20.092 14.326l.193-1.894c.103-1.011.17-1.678.117-2.099h.02c.871 0 1.578-.746 1.578-1.666C22 7.747 21.293 7 20.421 7s-1.579.746-1.579 1.667c0 .416.145.797.384 1.089c-.343.223-.792.695-1.468 1.405c-.52.547-.78.82-1.07.863a.835.835 0 0 1-.473-.07c-.268-.124-.447-.462-.804-1.139L13.527 7.25c-.22-.417-.405-.766-.572-1.047c.683-.368 1.15-1.117 1.15-1.98C14.105 2.994 13.163 2 12 2s-2.105.995-2.105 2.222c0 .864.467 1.613 1.15 1.98c-.167.282-.351.631-.572 1.048L8.59 10.816c-.358.676-.537 1.014-.805 1.139a.835.835 0 0 1-.473.07c-.29-.043-.55-.317-1.07-.864c-.676-.71-1.125-1.182-1.468-1.405c.24-.292.384-.673.384-1.09C5.158 7.747 4.45 7 3.578 7C2.708 7 2 7.746 2 8.667c0 .92.707 1.666 1.579 1.666h.019c-.054.42.014 1.088.117 2.099l.193 1.894c.107 1.051.196 2.051.306 2.952h15.572c.11-.9.199-1.901.306-2.952M10.855 22h2.29c2.985 0 4.478 0 5.474-.94c.434-.412.71-1.152.908-2.116H4.473c.198.964.473 1.704.908 2.115C6.377 22 7.87 22 10.855 22" fill="#fde74c" />
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1">
                            <font>
-                              <Font name="Jersey 10 Regular" size="28.0" />
+                              <Font name="Jersey 10 Regular" size="20.0" />
                            </font>
                         </Text>
                      </children>
                   </VBox>
                </children>
             </TextFlow>
-            <TextFlow prefHeight="200.0" prefWidth="200.0" style="-fx-border-width: 5; -fx-border-color: transparent black transparent black;" GridPane.columnIndex="1">
+            <TextFlow style="-fx-border-width: 0 0 0 5; -fx-border-color: transparent black transparent transparent;" GridPane.columnIndex="1" GridPane.rowIndex="0">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ruvu_11">
                      <font>
-                        <Font name="Jersey 10 Regular" size="28.0" />
+                        <Font name="Jersey 10 Regular" size="20.0" />
                      </font>
                   </Text>
                </children>
                <padding>
-                  <Insets left="20.0" top="5.0" />
+                  <Insets left="20.0" top="10.0" />
                </padding>
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
             </TextFlow>
-            <TextFlow layoutX="63.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="2">
+            <TextFlow textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="0">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="01:23">
                      <font>
-                        <Font name="Jersey 10 Regular" size="28.0" />
+                        <Font name="Jersey 10 Regular" size="20.0" />
                      </font>
                   </Text>
                </children>
@@ -106,64 +102,48 @@
                   <Insets top="10.0" />
                </padding>
             </TextFlow>
-            <TextFlow layoutX="548.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-width: 5; -fx-border-color: transparent black transparent black;" textAlignment="CENTER" GridPane.columnIndex="3">
+            <TextFlow style="-fx-border-width: 0 0 0 5; -fx-border-color: transparent black transparent transparent;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="0">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1532">
                      <font>
-                        <Font name="Jersey 10 Regular" size="28.0" />
+                        <Font name="Jersey 10 Regular" size="20.0" />
                      </font>
                   </Text>
                </children>
                <padding>
-                  <Insets top="5.0" />
+                  <Insets top="10.0" />
                </padding>
             </TextFlow>
-            <TextFlow layoutX="10.0" layoutY="9.0" prefHeight="8.0" prefWidth="53.0" style="-fx-background-color: c0c0c0; -fx-background-radius: 500;" textAlignment="CENTER" GridPane.rowIndex="1">
+            <TextFlow style="-fx-background-color: #c0c0c0; -fx-background-radius: 500;" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="1">
                <children>
                   <VBox alignment="CENTER" prefHeight="54.0" prefWidth="52.0">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2">
                            <font>
-                              <Font name="Jersey 10 Regular" size="28.0" />
+                              <Font name="Jersey 10 Regular" size="20.0" />
                            </font>
                         </Text>
                      </children>
                   </VBox>
                </children>
             </TextFlow>
-            <TextFlow layoutX="10.0" layoutY="58.0" prefHeight="8.0" prefWidth="53.0" style="-fx-background-color: cd7f32; -fx-background-radius: 500;" textAlignment="CENTER" GridPane.rowIndex="2">
-               <children>
-                  <VBox alignment="CENTER" prefHeight="54.0" prefWidth="52.0">
-                     <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3">
-                           <font>
-                              <Font name="Jersey 10 Regular" size="28.0" />
-                           </font>
-                        </Text>
-                     </children>
-                  </VBox>
-               </children>
-            </TextFlow>
-            <TextFlow layoutX="68.0" layoutY="10.0" prefHeight="50.0" prefWidth="444.0" style="-fx-border-width: 5; -fx-border-color: transparent black transparent black;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <TextFlow style="-fx-border-width: 0 0 0 5; -fx-border-color: transparent black transparent transparent;" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="goldjam_77">
                      <font>
-                        <Font name="Jersey 10 Regular" size="28.0" />
+                        <Font name="Jersey 10 Regular" size="20.0" />
                      </font>
                   </Text>
                </children>
                <padding>
-                  <Insets left="20.0" top="5.0" />
+                  <Insets left="20.0" top="10.0" />
                </padding>
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
             </TextFlow>
-            <TextFlow layoutX="548.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <TextFlow textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="01:27">
                      <font>
-                        <Font name="Jersey 10 Regular" size="28.0" />
+                        <Font name="Jersey 10 Regular" size="20.0" />
                      </font>
                   </Text>
                </children>
@@ -171,30 +151,66 @@
                   <Insets top="10.0" />
                </padding>
             </TextFlow>
-            <TextFlow layoutX="619.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-width: 5; -fx-border-color: transparent black transparent black;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <TextFlow style="-fx-border-width: 0 0 0 5; -fx-border-color: transparent black transparent transparent;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1492">
                      <font>
-                        <Font name="Jersey 10 Regular" size="28.0" />
+                        <Font name="Jersey 10 Regular" size="20.0" />
                      </font>
                   </Text>
                </children>
                <padding>
-                  <Insets top="5.0" />
+                  <Insets top="10.0" />
                </padding>
             </TextFlow>
-            <TextFlow layoutX="10.0" layoutY="68.0" prefHeight="8.0" prefWidth="53.0" style="-fx-background-color: fff; -fx-background-radius: 500;" textAlignment="CENTER" GridPane.rowIndex="3">
+            <TextFlow style="-fx-background-color: #cd7f32; -fx-background-radius: 500;" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="2">
                <children>
                   <VBox alignment="CENTER" prefHeight="54.0" prefWidth="52.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3">
                            <font>
-                              <Font name="Jersey 10 Regular" size="28.0" />
+                              <Font name="Jersey 10 Regular" size="20.0" />
                            </font>
                         </Text>
                      </children>
                   </VBox>
                </children>
+            </TextFlow>
+            <TextFlow style="-fx-border-width: 0 0 0 5; -fx-border-color: transparent black transparent transparent;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="bronze_warrior">
+                     <font>
+                        <Font name="Jersey 10 Regular" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets left="20.0" top="10.0" />
+               </padding>
+            </TextFlow>
+            <TextFlow textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="01:45">
+                     <font>
+                        <Font name="Jersey 10 Regular" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </TextFlow>
+            <TextFlow style="-fx-border-width: 0 0 0 5; -fx-border-color: transparent black transparent transparent;" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1200">
+                     <font>
+                        <Font name="Jersey 10 Regular" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
             </TextFlow>
          </children>
       </GridPane>
