@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="735fe65c-6948-4397-b793-51a5d2d97383" name="Changes" comment="hotfix: modified gitignore to ignore .idea dir">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/input-nickname-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,12 +15,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -30,12 +34,12 @@
     &quot;assignee&quot;: &quot;Kurniadinata&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/N1Coder/trivia-quiz-app.git&quot;,
-    &quot;accountId&quot;: &quot;d8e40fa8-8c69-4013-a0b2-d45fce2b2e26&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/N1Coder/trivia-quiz-app.git",
+    "accountId": "da2a7fb8-323d-4608-969f-ed4380fddef7"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -48,21 +52,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;ata&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/maulana/Documents/Code/trivia-quiz-app&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "InputPlayerNaufal",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/kuisz/trivia-quiz-app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.JavaFX",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -76,11 +86,19 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.main.triviaquizapp.HelloApplication" />
       <module name="trivia-quiz-app" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\JavaFx\javafx-sdk-22.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\ALPRO M\javafx\javafx-sdk-22.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -90,6 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714147298102</updated>
+      <workItem from="1716702641247" duration="705000" />
     </task>
     <task id="LOCAL-00001" summary="feature:Menambah data Quiz dan Controller Quiz&#10;&#10;Menambah json file sebagai data quiz dan menampilkan soal serta jawaban kemudian memvalidasi jawaban yang benar untuk lanjut kejawaban selanjutnya.&#10;Tolong Hubungkan dengan UI yand sudah dibuat!">
       <option name="closed" value="true" />
@@ -107,8 +126,19 @@
       <option name="project" value="LOCAL" />
       <updated>1715504387718</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="hotfix: modified gitignore to ignore .idea dir">
+      <option name="closed" value="true" />
+      <created>1716703025522</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716703025522</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -135,6 +165,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feature:Menambah data Quiz dan Controller Quiz&#10;&#10;Menambah json file sebagai data quiz dan menampilkan soal serta jawaban kemudian memvalidasi jawaban yang benar untuk lanjut kejawaban selanjutnya.&#10;Tolong Hubungkan dengan UI yand sudah dibuat!" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature:Menambah data Quiz dan Controller Quiz&#10;&#10;Menambah json file sebagai data quiz dan menampilkan soal serta jawaban kemudian memvalidasi jawaban yang benar untuk lanjut kejawaban selanjutnya.&#10;Tolong Hubungkan dengan UI yand sudah dibuat!" />
+    <MESSAGE value="hotfix: modified gitignore to ignore .idea dir" />
+    <option name="LAST_COMMIT_MESSAGE" value="hotfix: modified gitignore to ignore .idea dir" />
   </component>
 </project>
