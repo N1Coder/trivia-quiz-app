@@ -2,7 +2,7 @@ package com.main.triviaquizapp.model;
 
 import java.util.List;
 
-public class Question {
+public class    Question {
     private Integer questionId;
     private String questionText;
     private List<Option>options;
