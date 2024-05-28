@@ -72,7 +72,19 @@ public class QuizController {
     public void correctAnswer(ActionEvent actionEvent, Option selectedOption) throws UnsupportedAudioFileException, LineUnavailableException, IOException {
         if (isCorrectOption(selectedOption)) {
             System.out.println("Jawaban benar!");
-            sound.playMusic("correct.wav", 1f);
+            sound.playMusic("correct.wav",  1f);
+
+            score.addCorrectAnswer(selectedOption);
+
+            if (score.isCompleted()) {
+                System.out.println("Kuis selesai!");
+                Duration totalDuration = Duration.between(quizStartTime, Instant.now());
+                int finalScore = score.calculateScore(totalDuration); // Update and get the final score
+                System.out.println("Skor akhir: " + finalScore);
+                System.out.println("Waktu yang diambil: " + score.getTimeMinutes() + " menit dan " + score.getTimeSeconds() + " detik.");
+                stopTimer();
+                return;
+            }
 
             score.addCorrectAnswer(selectedOption);
 
@@ -216,3 +228,4 @@ public class QuizController {
         }
     }
 }
+
