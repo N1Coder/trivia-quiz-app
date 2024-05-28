@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="740.0" style="-fx-background-color: #ffdd00;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="740.0" style="-fx-background-color: #ffdd00;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.triviaquizapp.controller.HighScoreController">
    <children>
       <TextFlow layoutX="26.0" layoutY="25.0" prefHeight="52.0" prefWidth="500.0" style="-fx-background-color: #fff;" textAlignment="CENTER">
          <children>
@@ -29,7 +29,7 @@
             <DropShadow height="0.0" offsetX="10.0" offsetY="10.0" radius="0.0" width="0.0" />
          </effect>
       </TextFlow>
-      <Button fx:id="btnExitLeaderboard" layoutX="576.0" layoutY="22.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="136.0" style="-fx-background-color: #af00ff;" text="EXIT" textFill="WHITE">
+      <Button fx:id="btnExitLeaderboard" layoutX="576.0" layoutY="22.0" mnemonicParsing="false" onAction="#exitToMainMenu" prefHeight="59.0" prefWidth="136.0" style="-fx-background-color: #af00ff;" text="EXIT" textFill="WHITE">
          <font>
             <Font name="Pixelify Sans Regular" size="28.0" />
          </font>
@@ -47,22 +47,20 @@
             <SVGPath content="M5.002 21h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2h-14c-1.103 0-2 .897-2 2v6.001H10V7l6 5l-6 5v-3.999H3.002V19c0 1.103.897 2 2 2" fill="WHITE" />
          </graphic>
       </Button>
-      <GridPane hgap="10.0" layoutX="26.0" layoutY="105.0" prefHeight="400.0" prefWidth="687.0" vgap="10.0">
+      <GridPane fx:id="highScoreGridPane" hgap="10.0" layoutX="26.0" layoutY="105.0" prefHeight="400.0" prefWidth="687.0" vgap="30.0">
          <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="50.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="150.0" prefWidth="250.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.4" minWidth="0.0" prefWidth="36.59998168945313" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="378.79999999999995" minWidth="150.0" prefWidth="342.20001831054685" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="100.0" />
          </columnConstraints>
          <rowConstraints>
             <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="53.39999999999999" minHeight="30.0" prefHeight="45.39999999999999" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="77.19998779296876" minHeight="30.0" prefHeight="52.599999999999994" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="42.999969482421875" minHeight="11.600012207031256" prefHeight="42.999969482421875" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="41.60000000000002" minHeight="29.400030517578102" prefHeight="40.80001220703127" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="41.60001220703123" minHeight="30.0" prefHeight="35.19998779296873" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
             <TextFlow style="-fx-background-color: #fff; -fx-background-radius: 500;" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0">
@@ -78,7 +76,7 @@
                   </VBox>
                </children>
             </TextFlow>
-            <TextFlow style="-fx-border-width: 0 0 0 5; -fx-border-color: transparent black transparent transparent;" GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <TextFlow prefHeight="42.0" prefWidth="687.0" style="-fx-border-width: 0 0 0 5; -fx-border-color: transparent black transparent transparent;" GridPane.columnIndex="1" GridPane.rowIndex="0">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ruvu_11">
                      <font>

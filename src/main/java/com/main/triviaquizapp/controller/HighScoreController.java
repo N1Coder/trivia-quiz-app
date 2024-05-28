@@ -63,7 +63,7 @@ public class HighScoreController {
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/main/triviaquizapp/menu-view.fxml")));
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
-            stage.show();
+            stage.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
