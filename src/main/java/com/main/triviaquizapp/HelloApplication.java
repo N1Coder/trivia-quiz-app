@@ -25,7 +25,6 @@ public class HelloApplication extends Application {
         music.playMusic("backgroundMusic.wav",0.2f);
         launch();
 
-
     }
 
 }

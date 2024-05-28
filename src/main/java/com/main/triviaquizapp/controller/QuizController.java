@@ -1,5 +1,6 @@
 package com.main.triviaquizapp.controller;
 
+import com.main.triviaquizapp.model.DataStore;
 import com.main.triviaquizapp.model.Option;
 import com.main.triviaquizapp.model.Question;
 import com.main.triviaquizapp.model.Quiz;
@@ -8,8 +9,13 @@ import com.main.triviaquizapp.utils.jdm.QuestionJDM;
 import com.main.triviaquizapp.utils.music.Music;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
@@ -66,7 +72,7 @@ public class QuizController {
     public void correctAnswer(ActionEvent actionEvent, Option selectedOption) throws UnsupportedAudioFileException, LineUnavailableException, IOException {
         if (isCorrectOption(selectedOption)) {
             System.out.println("Jawaban benar!");
-            sound.playMusic("correct.wav", 1f);
+            sound.playMusic("correct.wav",  1f);
 
             score.addCorrectAnswer(selectedOption);
 
@@ -77,6 +83,26 @@ public class QuizController {
                 System.out.println("Skor akhir: " + finalScore);
                 System.out.println("Waktu yang diambil: " + score.getTimeMinutes() + " menit dan " + score.getTimeSeconds() + " detik.");
                 stopTimer();
+                return;
+            }
+
+            score.addCorrectAnswer(selectedOption);
+
+            if (score.isCompleted()) {
+                System.out.println("Kuis selesai!");
+                Duration totalDuration = Duration.between(quizStartTime, Instant.now());
+                int finalScore = score.calculateScore(totalDuration); // Update and get the final score
+                System.out.println("Skor akhir: " + finalScore);
+                System.out.println("Waktu yang diambil: " + score.getTimeMinutes() + " menit dan " + score.getTimeSeconds() + " detik.");
+                stopTimer();
+
+                // Periksa apakah skor tinggi
+                if (DataStore.isHighScore(score)) {
+                    showInputNicknameScreen(actionEvent); // Arahkan ke layar input nama
+                } else {
+                    switchToMenuView(actionEvent);
+                }
+
                 return;
             }
 
@@ -175,4 +201,31 @@ public class QuizController {
                 throw new IllegalArgumentException("Invalid button index: " + index);
         }
     }
+
+    private void showInputNicknameScreen(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/main/triviaquizapp/input-nickname-view.fxml"));
+            Parent root = loader.load();
+            InputPlayerController inputPlayerController = loader.getController();
+            inputPlayerController.setScore(score);
+
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void switchToMenuView(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/com/main/triviaquizapp/menu-view.fxml"));
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
+
