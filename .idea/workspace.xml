@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="735fe65c-6948-4397-b793-51a5d2d97383" name="Changes" comment="hotfix: modified gitignore to ignore .idea dir">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/HighScoreController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/Score.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/PlayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/PlayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/HighScoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/HighScoreController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/QuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/QuizController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/Option.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/DataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/DataStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/Score.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/highscore-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/main/triviaquizapp/highscore-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,12 +39,17 @@
     &quot;assignee&quot;: &quot;Kurniadinata&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/N1Coder/trivia-quiz-app.git",
-    "accountId": "e4c4daa3-dab3-49a9-a917-9ca6ab6ed89d"
-  }
-}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="38e41d6e-17eb-44a4-a84c-ed9844dc0a08" />
+        <option name="url" value="https://github.com/N1Coder/trivia-quiz-app.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -60,21 +62,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/UI",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.JavaFX"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/UI&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -189,5 +191,15 @@
     <MESSAGE value="feature:Menambah data Quiz dan Controller Quiz&#10;&#10;Menambah json file sebagai data quiz dan menampilkan soal serta jawaban kemudian memvalidasi jawaban yang benar untuk lanjut kejawaban selanjutnya.&#10;Tolong Hubungkan dengan UI yand sudah dibuat!" />
     <MESSAGE value="hotfix: modified gitignore to ignore .idea dir" />
     <option name="LAST_COMMIT_MESSAGE" value="hotfix: modified gitignore to ignore .idea dir" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

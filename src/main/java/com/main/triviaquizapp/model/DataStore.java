@@ -18,13 +18,13 @@ public class DataStore {
         // Sort the scores in descending order
         Collections.sort(topScores, Comparator.comparingInt(Score::getScore).reversed());
         // Ensure the list has at most 10 scores
-        if (topScores.size() > 10) {
-            topScores = topScores.subList(0, 10);
+        if (topScores.size() > 5) {
+            topScores = topScores.subList(0, 5);
         }
     }
 
     public static boolean isHighScore(Score score) {
-        if (topScores.size() < 10) {
+        if (topScores.size() < 5) {
             return true;
         }
         int lowestHighScore = topScores.get(topScores.size() - 1).getScore();
