@@ -1,10 +1,6 @@
 package com.main.triviaquizapp.controller;
 
-import com.main.triviaquizapp.model.DataStore;
-import com.main.triviaquizapp.model.Option;
-import com.main.triviaquizapp.model.Question;
-import com.main.triviaquizapp.model.Quiz;
-import com.main.triviaquizapp.model.Score;
+import com.main.triviaquizapp.model.*;
 import com.main.triviaquizapp.utils.jdm.QuestionJDM;
 import com.main.triviaquizapp.utils.music.Music;
 import javafx.event.ActionEvent;
@@ -20,7 +16,6 @@ import javafx.stage.Stage;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.IOException;
-import java.time.Duration;
 import java.time.Instant;
 import java.util.*;
 
@@ -72,17 +67,18 @@ public class QuizController {
     public void correctAnswer(ActionEvent actionEvent, Option selectedOption) throws UnsupportedAudioFileException, LineUnavailableException, IOException {
         if (isCorrectOption(selectedOption)) {
             System.out.println("Jawaban benar!");
-            sound.playMusic("correct.wav",  1f);
+            sound.playMusic("correct.wav", 1f);
 
             score.addCorrectAnswer(selectedOption);
 
             if (score.isCompleted()) {
                 System.out.println("Kuis selesai!");
-                Duration totalDuration = Duration.between(quizStartTime, Instant.now());
-                int finalScore = score.calculateScore(totalDuration); // Update and get the final score
+                stopTimer();
+                score.setTime(timeMinutes, timeSeconds);
+                int totalSeconds = timeMinutes * 60 + timeSeconds;
+                int finalScore = score.calculateScore(totalSeconds); // Update and get the final score
                 System.out.println("Skor akhir: " + finalScore);
                 System.out.println("Waktu yang diambil: " + score.getTimeMinutes() + " menit dan " + score.getTimeSeconds() + " detik.");
-                stopTimer();
 
                 // Periksa apakah skor tinggi
                 if (DataStore.isHighScore(score)) {
@@ -216,4 +212,3 @@ public class QuizController {
         }
     }
 }
-

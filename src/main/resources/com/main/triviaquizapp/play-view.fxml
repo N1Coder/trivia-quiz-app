@@ -127,7 +127,7 @@
          <children>
             <TextFlow prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: fff;" textAlignment="CENTER">
                <children>
-                  <Text fx:id="minutes" strokeType="OUTSIDE" strokeWidth="0.0" text="01" wrappingWidth="70.13671875">
+                  <Text fx:id="minutes" strokeType="OUTSIDE" strokeWidth="0.0" text="00" wrappingWidth="70.13671875">
                      <font>
                         <Font name="Avenir Next Heavy" size="36.0" />
                      </font>
@@ -136,7 +136,7 @@
             </TextFlow>
             <TextFlow layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" textAlignment="CENTER">
                <children>
-                  <Text fx:id="second" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="39">
+                  <Text fx:id="second" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
                      <font>
                         <Font name="Avenir Next Heavy" size="36.0" />
                      </font>

@@ -1,12 +1,9 @@
 package com.main.triviaquizapp.model;
 
 import java.time.Duration;
-import java.time.Instant;
 
 public class Score {
     private int correctAnswers;
-    private Instant firstAnswerTime;
-    private Instant lastAnswerTime;
     private int timeMinutes;
     private int timeSeconds;
     private int score;
@@ -19,37 +16,35 @@ public class Score {
         this.time = time;
     }
 
-    // Default constructor for tracking correct answers and time
+    // Default constructor for tracking correct answers
     public Score() {
         this.correctAnswers = 0;
-        this.firstAnswerTime = null;
-        this.lastAnswerTime = null;
     }
 
     public void addCorrectAnswer(Option option) {
         if (option.getCorrect()) {
-            System.out.println(correctAnswers);
             correctAnswers++;
-            lastAnswerTime = Instant.now();
-            if (correctAnswers == 1) {
-                firstAnswerTime = lastAnswerTime;
-            }
-            if (correctAnswers == 10) {
-                Duration duration = Duration.between(firstAnswerTime, lastAnswerTime);
-                timeMinutes = (int) duration.toMinutes();
-                timeSeconds = (int) (duration.getSeconds() % 60);
-                time = String.format("%02d:%02d", timeMinutes, timeSeconds);
-                score = calculateScore(duration);
-            }
         }
     }
 
-    public int calculateScore(Duration duration) {
-        int totalSeconds = (int) duration.getSeconds();
-        int timeBonus = Math.max(0, 300 - totalSeconds);
-        int baseScore = correctAnswers * 50;
-        score = baseScore + timeBonus;
+    public int calculateScore(int totalSeconds) {
+        // Base score for 10 correct answers
+        int baseScore = correctAnswers * 100;
+        // Subtract 5 points for each second taken
+        int timePenalty = totalSeconds * 5;
+        // Calculate final score
+        score = baseScore - timePenalty;
+        // Ensure score is not negative
+        if (score < 0) {
+            score = 0;
+        }
         return score;
+    }
+
+    public void setTime(int minutes, int seconds) {
+        this.timeMinutes = minutes;
+        this.timeSeconds = seconds;
+        this.time = String.format("%02d:%02d", timeMinutes, timeSeconds);
     }
 
     public int getScore() {
@@ -58,6 +53,14 @@ public class Score {
 
     public String getTime() {
         return time;
+    }
+
+    public String getPlayerName() {
+        return playerName;
+    }
+
+    public void setPlayerName(String playerName) {
+        this.playerName = playerName;
     }
 
     public void printScore() {
@@ -77,13 +80,5 @@ public class Score {
 
     public boolean isCompleted() {
         return correctAnswers >= 10;
-    }
-
-    public String getPlayerName() {
-        return playerName;
-    }
-
-    public void setPlayerName(String playerName) {
-        this.playerName = playerName;
     }
 }

@@ -1,5 +1,7 @@
 package com.main.triviaquizapp.controller;
 
+import com.main.triviaquizapp.model.Option;
+import com.main.triviaquizapp.model.Score;
 import com.main.triviaquizapp.utils.music.Music;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,12 +19,14 @@ import java.util.Objects;
 
 public class PlayController {
     Music sound = new Music();
+    private Score score;
 
     @FXML
     private Button btnMenuStart, btnMenuLeaderBoard, btnMenuExit;
 
     @FXML
     private void toQuiz(ActionEvent event) {
+        score = new Score(); // Initialize the score for the quiz
         try {
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/main/triviaquizapp/play-view.fxml")));
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -46,7 +50,6 @@ public class PlayController {
     @FXML
     private void toLeaderBoard(ActionEvent event) {
         try {
-            // Cetak path yang akan diakses untuk memastikan path benar
             System.out.println("Loading Highscore-view.fxml from path: " +
                     Objects.requireNonNull(getClass().getResource("/com/main/triviaquizapp/Highscore-view.fxml")));
 
@@ -118,5 +121,17 @@ public class PlayController {
         btnMenuExit.setOnAction(event -> {
             exitApplication(event);
         });
+    }
+
+    // Method to handle correct answer submission
+    public void handleCorrectAnswer(Option option) {
+        if (score != null) {
+            score.addCorrectAnswer(option);
+            score.printScore();
+            if (score.isCompleted()) {
+                System.out.println("Quiz completed!");
+                // Here you can add logic to display the final score, save it, etc.
+            }
+        }
     }
 }
