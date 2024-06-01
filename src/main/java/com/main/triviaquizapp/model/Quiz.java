@@ -2,7 +2,7 @@ package com.main.triviaquizapp.model;
 
 import java.util.List;
 
-public class Quiz {
+public class Quiz extends Trivia {
     private List<Question> questions;
 
     public Quiz(){

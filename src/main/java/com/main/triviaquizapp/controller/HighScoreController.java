@@ -53,7 +53,7 @@ public class HighScoreController {
         TextFlow nameFlow = creaTextFlowWithBorder(nameText);
 
         // time
-        Text timeText = createText(score.getTime());
+        Text timeText = createText(score.getTime().getTime());
         TextFlow timeFlow = creaTextFlowWithBorder(timeText);
 
         // score
@@ -102,9 +102,9 @@ public class HighScoreController {
     private void updateHighScoreGridPane() {
         List<Score> topScores = DataStore.getTopScores();
         highScoreGridPane.getChildren().clear();
-        for (int i = 0; i < topScores.size(); i++) {
-            Score score = topScores.get(i);
-            addHighScoreRow(highScoreGridPane, score.getPlayerName(), score, i);
+        for (int rank = 0; rank < topScores.size(); rank++) {
+            Score score = topScores.get(rank);
+            addHighScoreRow(highScoreGridPane, score.getPlayerName(), score, rank);
         }
     }
 

@@ -1,17 +1,13 @@
 package com.main.triviaquizapp.model;
 
-import java.time.Duration;
-
 public class Score {
     private int correctAnswers;
-    private int timeMinutes;
-    private int timeSeconds;
     private int score;
-    private String time;
-    private String playerName;
+    private Time time = new Time();
+    private Player playerLeaderboard = new PlayerLeaderboard();
 
     // Constructor for predefined score and time
-    public Score(int score, String time) {
+    public Score(int score, Time time) {
         this.score = score;
         this.time = time;
     }
@@ -42,40 +38,41 @@ public class Score {
     }
 
     public void setTime(int minutes, int seconds) {
-        this.timeMinutes = minutes;
-        this.timeSeconds = seconds;
-        this.time = String.format("%02d:%02d", timeMinutes, timeSeconds);
+        this.time.setTimeMinutes(minutes);
+        this.time.setTimeSeconds(seconds);
+
+        this.time.setTime(String.format("%02d:%02d", time.getTimeMinutes(), time.getTimeSeconds()));
     }
 
     public int getScore() {
         return score;
     }
 
-    public String getTime() {
+    public Time getTime() {
         return time;
     }
 
     public String getPlayerName() {
-        return playerName;
+        return playerLeaderboard.getName();
     }
 
     public void setPlayerName(String playerName) {
-        this.playerName = playerName;
+        playerLeaderboard.setName(playerName);
     }
 
     public void printScore() {
         System.out.println("Current Score: " + getScore());
         if (correctAnswers >= 10) {
-            System.out.println("Time taken for 10 correct answers: " + timeMinutes + " minutes and " + timeSeconds + " seconds.");
+            System.out.println("Time taken for 10 correct answers: " + time.getTimeMinutes() + " minutes and " + time.getTimeSeconds() + " seconds.");
         }
     }
 
     public int getTimeMinutes() {
-        return timeMinutes;
+        return time.getTimeMinutes();
     }
 
     public int getTimeSeconds() {
-        return timeSeconds;
+        return time.getTimeSeconds();
     }
 
     public boolean isCompleted() {

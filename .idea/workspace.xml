@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="735fe65c-6948-4397-b793-51a5d2d97383" name="Changes" comment="feat: add dynamic leaderboard in highscore-view.fxml">
+    <list default="true" id="735fe65c-6948-4397-b793-51a5d2d97383" name="Changes" comment="fix: fix score calculation ft. @LuthfanThamrin">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/PlayerLeaderboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/Time.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/Trivia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/PlayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/PlayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/QuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/QuizController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz.json" beforeDir="false" afterPath="$PROJECT_DIR$/quiz.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/HighScoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/controller/HighScoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/Quiz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/triviaquizapp/model/Score.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +93,7 @@
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.main.triviaquizapp.HelloApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.main.triviaquizapp.Main" />
       <module name="trivia-quiz-app" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\JavaFx\javafx-sdk-22.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
@@ -163,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716984422939</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix: fix score calculation ft. @LuthfanThamrin">
+      <created>1717147569388</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717147569388</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +210,8 @@
     <MESSAGE value="feature:Menambah data Quiz dan Controller Quiz&#10;&#10;Menambah json file sebagai data quiz dan menampilkan soal serta jawaban kemudian memvalidasi jawaban yang benar untuk lanjut kejawaban selanjutnya.&#10;Tolong Hubungkan dengan UI yand sudah dibuat!" />
     <MESSAGE value="hotfix: modified gitignore to ignore .idea dir" />
     <MESSAGE value="feat: add dynamic leaderboard in highscore-view.fxml" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add dynamic leaderboard in highscore-view.fxml" />
+    <MESSAGE value="fix: fix score calculation ft. @LuthfanThamrin" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fix score calculation ft. @LuthfanThamrin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

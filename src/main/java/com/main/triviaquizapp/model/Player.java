@@ -2,10 +2,8 @@ package com.main.triviaquizapp.model;
 
 public class Player {
     private String name;
-
-    public Player(String name) {
-        this.name = name;
-    }
+    private Time timeToFinish;
+    private int playerScore;
 
     public String getName() {
         return name;
@@ -13,5 +11,21 @@ public class Player {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Time getTimeToFinish() {
+        return timeToFinish;
+    }
+
+    public void setTimeToFinish(Time timeToFinish) {
+        this.timeToFinish = timeToFinish;
+    }
+
+    public int getPlayerScore() {
+        return playerScore;
+    }
+
+    public void setPlayerScore(int playerScore) {
+        this.playerScore = playerScore;
     }
 }

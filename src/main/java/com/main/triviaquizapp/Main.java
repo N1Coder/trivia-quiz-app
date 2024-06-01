@@ -9,10 +9,10 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import javax.sound.sampled.*;
 
-public class HelloApplication extends Application {
+public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("menu-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("menu-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Press Start!");
         stage.setScene(scene);
