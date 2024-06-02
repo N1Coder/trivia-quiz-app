@@ -1,6 +1,7 @@
 package com.main.triviaquizapp.controller;
 
 import com.main.triviaquizapp.model.*;
+import com.main.triviaquizapp.store.DataStore;
 import com.main.triviaquizapp.utils.jdm.QuestionJDM;
 import com.main.triviaquizapp.utils.music.Music;
 import javafx.event.ActionEvent;
@@ -76,13 +77,12 @@ public class QuizController {
                 stopTimer();
                 score.setTime(timeMinutes, timeSeconds);
                 int totalSeconds = timeMinutes * 60 + timeSeconds;
-                int finalScore = score.calculateScore(totalSeconds); // Update and get the final score
+                int finalScore = score.calculateScore(totalSeconds);
                 System.out.println("Skor akhir: " + finalScore);
                 System.out.println("Waktu yang diambil: " + score.getTimeMinutes() + " menit dan " + score.getTimeSeconds() + " detik.");
 
-                // Periksa apakah skor tinggi
                 if (DataStore.isHighScore(score)) {
-                    showInputNicknameScreen(actionEvent); // Arahkan ke layar input nama
+                    showInputNicknameScreen(actionEvent);
                 } else {
                     switchToMenuView(actionEvent);
                 }

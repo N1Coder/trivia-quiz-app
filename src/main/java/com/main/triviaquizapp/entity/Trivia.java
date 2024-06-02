@@ -1,6 +1,6 @@
-package com.main.triviaquizapp.model;
+package com.main.triviaquizapp.entity;
 
-public class Trivia {
+public abstract class Trivia {
     private String id;
     private String triviaTopic;
 

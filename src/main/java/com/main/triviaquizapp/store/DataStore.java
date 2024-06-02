@@ -1,4 +1,6 @@
-package com.main.triviaquizapp.model;
+package com.main.triviaquizapp.store;
+
+import com.main.triviaquizapp.model.Score;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,15 +11,14 @@ public class DataStore {
     private static List<Score> topScores = new ArrayList<>();
 
     public static List<Score> getTopScores() {
-        return new ArrayList<>(topScores); // Return a copy to prevent modification of original list
+        return new ArrayList<>(topScores);
     }
 
     public static void addHighScore(String playerName, Score score) {
-        score.setPlayerName(playerName);  // Set player name here as well for redundancy
+        score.setPlayerName(playerName);
         topScores.add(score);
-        // Sort the scores in descending order
         Collections.sort(topScores, Comparator.comparingInt(Score::getScore).reversed());
-        // Ensure the list has at most 10 scores
+
         if (topScores.size() > 5) {
             topScores = topScores.subList(0, 5);
         }

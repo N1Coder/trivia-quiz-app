@@ -1,5 +1,7 @@
 package com.main.triviaquizapp.model;
 
+import com.main.triviaquizapp.entity.Player;
+
 public class PlayerLeaderboard extends Player {
     private int positionOnLeaderboard;
 

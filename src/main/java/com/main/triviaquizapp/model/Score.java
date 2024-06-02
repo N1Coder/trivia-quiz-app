@@ -1,18 +1,18 @@
 package com.main.triviaquizapp.model;
 
+import com.main.triviaquizapp.entity.Player;
+
 public class Score {
     private int correctAnswers;
     private int score;
     private Time time = new Time();
     private Player playerLeaderboard = new PlayerLeaderboard();
 
-    // Constructor for predefined score and time
     public Score(int score, Time time) {
         this.score = score;
         this.time = time;
     }
 
-    // Default constructor for tracking correct answers
     public Score() {
         this.correctAnswers = 0;
     }
@@ -24,13 +24,12 @@ public class Score {
     }
 
     public int calculateScore(int totalSeconds) {
-        // Base score for 10 correct answers
         int baseScore = correctAnswers * 100;
-        // Subtract 5 points for each second taken
+
         int timePenalty = totalSeconds * 5;
-        // Calculate final score
+
         score = baseScore - timePenalty;
-        // Ensure score is not negative
+
         if (score < 0) {
             score = 0;
         }

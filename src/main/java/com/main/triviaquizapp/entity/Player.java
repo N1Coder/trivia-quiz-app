@@ -1,6 +1,8 @@
-package com.main.triviaquizapp.model;
+package com.main.triviaquizapp.entity;
 
-public class Player {
+import com.main.triviaquizapp.model.Time;
+
+public abstract class Player {
     private String name;
     private Time timeToFinish;
     private int playerScore;

@@ -1,6 +1,6 @@
 package com.main.triviaquizapp.controller;
 
-import com.main.triviaquizapp.model.DataStore;
+import com.main.triviaquizapp.store.DataStore;
 import com.main.triviaquizapp.model.Score;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
